@@ -9,6 +9,8 @@ export default {
   theme: {
     extend: {
       colors: {
+        primary: "#ffffff", // baby powder
+        secondary: "#12263A", // prussian blue
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
