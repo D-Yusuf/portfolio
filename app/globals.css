@@ -13,7 +13,9 @@
     --foreground: #ededed;
   }
 }
-
+html{
+    scroll-behavior: smooth !important;
+}
 body {
   color: var(--foreground);
   background: var(--background);
@@ -52,4 +54,8 @@ body {
 
 .animation-delay-4000 {
   animation-delay: 4s;
+}
+
+html {
+  scroll-behavior: smooth;
 }
