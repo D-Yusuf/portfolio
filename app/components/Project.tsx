@@ -14,9 +14,9 @@ type ProjectProps = {
 
 export default function Project({title, description, coverImage, repoLink, liveLink, technologies}: ProjectProps) {
   return (
-    <div className="group relative overflow-hidden rounded-xl bg-white/5 transition-all duration-300 hover:bg-white/10">
+    <div className="bg-primary group w-full relative overflow-hidden rounded-xl  transition-all duration-300 hover:bg-white/10">
       {/* Image Container */}
-      <div className="relative h-48 w-full overflow-hidden">
+      <div className="relative h-72 w-full overflow-hidden">
         <Image
           src={coverImage}
           alt={title}
@@ -32,11 +32,11 @@ export default function Project({title, description, coverImage, repoLink, liveL
         <p className="mb-4 text-secondary/80">{description}</p>
 
         {/* Technologies */}
-        <div className="mb-4 flex flex-wrap gap-2">
+        <div className="mb-4  flex flex-wrap gap-2">
           {technologies.map((tech, index) => (
             <span
               key={index}
-              className="rounded-full bg-white/10 px-3 py-1 text-sm text-secondary"
+              className="rounded-full bg-secondary/10 px-3 py-1 text-sm text-secondary"
             >
               {tech}
             </span>
