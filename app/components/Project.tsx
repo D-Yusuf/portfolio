@@ -14,25 +14,25 @@ type ProjectProps = {
 
 export default function Project({title, description, coverImage, repoLink, liveLink, technologies}: ProjectProps) {
   return (
-    <div className="bg-primary group w-full relative overflow-hidden rounded-xl  transition-all duration-300 hover:bg-white/10">
+    <div className="bg-primary flex flex-col w-[49%] group relative overflow-hidden rounded-xl transition-all duration-300">
       {/* Image Container */}
-      <div className="relative h-72 w-full overflow-hidden">
+      <div className="relative w-full overflow-hidden">
         <Image
           src={coverImage}
           alt={title}
-          fill
-          className="object-cover transition-transform duration-300 group-hover:scale-110"
+          height={450}
+          className="transition-all duration-300 filter blur-sm opacity-100 group-hover:blur-none group-hover:opacity-100 mx-auto"
         />
-        <div className="absolute inset-0 bg-black/50 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+        <div className="absolute inset-0 bg-secondary/10 opacity-100 transition-opacity duration-300 group-hover:opacity-0" />
       </div>
 
       {/* Content */}
       <div className="p-6">
         <h3 className="mb-2 text-xl font-bold text-secondary">{title}</h3>
-        <p className="mb-4 text-secondary/80">{description}</p>
+        <p className="mb-4 text-secondary/80 ">{description}</p>
 
         {/* Technologies */}
-        <div className="mb-4  flex flex-wrap gap-2">
+        <div className="mb-4 flex flex-wrap gap-2">
           {technologies.map((tech, index) => (
             <span
               key={index}
