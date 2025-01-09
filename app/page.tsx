@@ -18,7 +18,8 @@ export default function Home() {
       <hr className="my-24 border-secondary h-px bg-secondary w-2/3" />
       <Contact />
 
-      <div className='flex flex-col fixed bottom-5 right-5 text-center items-center  gap-2'>
+      <hr className="block md:hidden my-24 border-secondary h-px bg-secondary w-2/3" />
+      <div className=' flex md:flex-col md:fixed bottom-5 right-5 text-center items-center  gap-2'>
             <SocialButton icon={TbBrandGithub} href='https://github.com/D-Yusuf'/>
             <SocialButton icon={FiLinkedin} href='https://linkedin.com/in/yusufalnasiri'/>
             <SocialButton icon={PiInstagramLogoBold} href='https://instagram.com/yalnasiri'/>
