@@ -3,6 +3,11 @@ import Introduction from "./sections/Introduction";
 import Contact from "./sections/Contact";
 import Projects from "./sections/Projects";
 import Navbar from "./components/Navbar";
+import  SocialButton from "./components/SocialButton";
+import { TbBrandGithub } from "react-icons/tb";
+import { FiLinkedin } from "react-icons/fi";
+import { PiInstagramLogoBold } from "react-icons/pi";
+import { BsTwitterX } from "react-icons/bs";
 
 export default function Home() {
   return (
@@ -12,6 +17,13 @@ export default function Home() {
       <Projects />
       <hr className="my-24 border-secondary h-px bg-secondary w-2/3" />
       <Contact />
+
+      <div className='flex flex-col fixed bottom-5 right-5 text-center items-center  gap-2'>
+            <SocialButton icon={TbBrandGithub} href='https://github.com/D-Yusuf'/>
+            <SocialButton icon={FiLinkedin} href='https://linkedin.com/in/yusufalnasiri'/>
+            <SocialButton icon={PiInstagramLogoBold} href='https://instagram.com/yalnasiri'/>
+            <SocialButton icon={BsTwitterX} href='https://instagram.com/yalnasiri'/>
+          </div>
     </div>
   );
 }

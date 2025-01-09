@@ -8,10 +8,16 @@ import TechSquare from '../components/TechSquare'
 
 export default function Introduction() {
   return (
-    <section id='introduction' className=" w-full flex max-h-screen">
-        <div className='flex flex-col w-full gap-16 '>
-            <h1 className='text-6xl font-bold'>Hello, I'm Yusuf Alnasiri 👋</h1>
-            <h2 className='text-4xl font-bold '>A Full-Stack Developer 📱/💻</h2>
+    <section id='introduction' className=" w-full flex max-h-screen  ">
+        <div className='flex flex-col w-full md:gap-16 gap-8 lg:items-start items-center lg:text-left text-center'>
+            <h1 className='md:text-6xl text-4xl font-bold'>Hello, I'm Yusuf Alnasiri 👋</h1>
+            <Image 
+          src={meImage} 
+          alt='me' 
+
+          className='lg:hidden  w-[250px] h-[300px] object-cover -z-10 rounded-md'
+        />
+            <h2 className='md:text-4xl text-2xl font-bold '>A Full-Stack Developer 📱/💻</h2>
 
             <div className='flex flex-col  gap-3'>
                 <div className="flex gap-3">
@@ -36,7 +42,13 @@ export default function Introduction() {
             
             
         </div>
-        <Image src={meImage} alt='me' className='h-1/2 w-1/3 rounded-b-full rounded-e-full mt-auto'/>
+        <Image 
+          src={meImage} 
+          alt='me' 
+
+          className='hidden lg:w-[400px] lg:h-[600px]  lg:block rounded-b-full rounded-e-full mt-auto'
+        />
+        
     </section>
   )
 }

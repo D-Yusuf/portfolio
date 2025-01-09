@@ -5,8 +5,8 @@ import foodzImg from '../images/projectImages/foodz.png'
 export default function Projects() {
   return (
     <section id='projects' className=" w-full flex flex-col gap-10">
-            <h1 className='text-4xl font-extrabold'>Featured Projects</h1>
-            <div className='flex flex-wrap justify-between gap-x-6 gap-y-10'>
+            <h1 className='md:text-6xl text-4xl font-extrabold'>Featured Projects</h1>
+            <div className='flex flex-wrap justify-center items-center gap-x-6 gap-y-10'>
                 <Project title='Difference'
                  description='A platform that connects inventors with investors in a secure, transparent and easy way' 
                  coverImage={differenceImg} 

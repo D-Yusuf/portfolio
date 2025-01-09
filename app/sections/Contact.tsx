@@ -72,8 +72,8 @@ export default function Contact() {
 
   return (
     <section id='contact' className="w-full  flex flex-col items-start  relative ">
-      <h1 className="text-6xl font-bold mb-4">Get In Touch</h1>
-      <p className="mb-8  text-4xl">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
+      <h1 className="md:text-6xl text-4xl font-bold mb-4">Get In Touch</h1>
+      <p className="md:text-4xl text-2xl mb-8">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
       <form onSubmit={handleSubmit} className="w-full max-w-2xl px-4">
         <div className="flex flex-wrap -mx-3 mb-6">
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
@@ -87,7 +87,7 @@ export default function Contact() {
               name="name"
               value={formData.name}
               onChange={handleChange}
-              placeholder="John Doe"
+              placeholder="John"
               required
             />
           </div>
@@ -102,7 +102,7 @@ export default function Contact() {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              placeholder="john@example.com"
+              placeholder="name@example.com"
               required
             />
           </div>
@@ -118,7 +118,7 @@ export default function Contact() {
               name="message"
               value={formData.message}
               onChange={handleChange}
-              placeholder="Your message..."
+              placeholder="Your message to Yusuf..."
               required
             />
           </div>
@@ -135,15 +135,10 @@ export default function Contact() {
               'Send'
             )}
           </button>
-          <div className='flex  text-center items-center  gap-2'>
-            <SocialButton icon={TbBrandGithub} href='https://github.com/D-Yusuf'/>
-            <SocialButton icon={FiLinkedin} href='https://linkedin.com/in/yusufalnasiri'/>
-            <SocialButton icon={PiInstagramLogoBold} href='https://instagram.com/yalnasiri'/>
-            <SocialButton icon={BsTwitterX} href='https://instagram.com/yalnasiri'/>
-          </div>
+          
         </div>
       </form>
-      <div className="absolute bottom-1/2 right-0  gap-2 p-4">
+      <div className="absolute bottom-1/2 right-0 opacity-60  gap-2 p-4">
     <div className="w-32 h-32 absolute bg-secondary opacity-10 transform rotate-[25deg]"></div> 
     <div className="w-32 h-32 absolute bg-secondary opacity-20 transform rotate-[50deg]"></div> 
     <div className="w-32 h-32 absolute bg-secondary opacity-30 transform rotate-[75deg]"></div>
