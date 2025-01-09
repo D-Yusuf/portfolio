@@ -1,13 +1,13 @@
 'use client'
 import React from 'react'
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 import { FaGithub, FaArrowLeft, FaArrowRight } from 'react-icons/fa'
 import { BiLinkExternal } from 'react-icons/bi'
 
 type ProjectProps = {
     title: string
     description: string
-    coverImage: string
+    coverImage: string | StaticImageData
     repoLink: string
     liveLink: string
     technologies: string[]
