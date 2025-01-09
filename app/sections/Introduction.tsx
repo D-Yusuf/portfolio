@@ -9,7 +9,7 @@ import TechSquare from '../components/TechSquare'
 export default function Introduction() {
   return (
     <section id='introduction' className=" w-full flex max-h-screen">
-        <div className='flex flex-col w-full gap-10 '>
+        <div className='flex flex-col w-full gap-16 '>
             <h1 className='text-6xl font-bold'>Hello, I'm Yusuf Alnasiri 👋</h1>
             <h2 className='text-4xl font-bold '>A Full-Stack Developer 📱/💻</h2>
 
@@ -34,11 +34,7 @@ export default function Introduction() {
 
 
             
-            <div className='flex  gap-2 mt-auto'>
-                <SocialButton icon={FaGithub} href='https://github.com/D-Yusuf' color='#333'>Github</SocialButton>
-                <SocialButton icon={FaLinkedin} href='https://linkedin.com/in/yusufalnasiri' color='#0077b5'>Linkedin</SocialButton>
-                {/* <SocialButton icon={SiReaddotcv} href='https://linkedin.com/in/yusufalnasiri'>CV</SocialButton> */}
-            </div>
+            
         </div>
         <Image src={meImage} alt='me' className='h-1/2 w-1/3 rounded-b-full rounded-e-full mt-auto'/>
     </section>

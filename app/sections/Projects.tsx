@@ -21,6 +21,13 @@ export default function Projects() {
                  liveLink='https://github.com/yusufalnasiri/project1' 
                  technologies={['React', 'Express', 'MongoDB', 'Tailwind CSS']} />
 
+                <Project title='Alo Driver (WIP)'
+                 description='A webite that allows each house to manage their driver/s with appointments, either for the house itself or for people who need a driver.' 
+                 coverImage={foodzImg} 
+                 repoLink='https://github.com/D-Yusuf/difference-front' 
+                 liveLink='https://github.com/yusufalnasiri/project1' 
+                 technologies={['React', 'Express', 'MongoDB', 'Tailwind CSS']} />
+
          
 
             </div>

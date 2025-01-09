@@ -11,12 +11,15 @@ type SocialButtonProps = {
 
 export default function SocialButton({children, href, icon: Icon, color}: SocialButtonProps) {
     return (
-        <button 
+        <Link 
+            href={href}
+            target="_blank"
             style={{ backgroundColor: color, borderColor: color }} 
-            className="p-2 text-center rounded-md flex items-center gap-2 text-white hover:opacity-90 transition-opacity"
+            className="p-2 text-center border-2 border-secondary group  rounded-md flex items-center gap-2  hover:opacity-90 transition-opacity"
         >
-            <Icon className='w-4 h-4'/>
-            <Link href={href} target="_blank">{children}</Link>
-        </button>
+            <Icon className='size-8 group-hover:scale-110'/>
+            {children}
+            {/* <Link href={href} target="_blank">{children}</Link> */}
+        </Link>
     )
 }
