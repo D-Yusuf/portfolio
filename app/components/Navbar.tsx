@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Navbar() {
   return (
-    <nav className="flex justify-center items-center relative w-full p-12 mb-16">
+    <nav className="flex justify-center items-center relative max-w-7xl mx-auto  p-12 mb-16">
         <div className="text-xl font-bold hidden md:block md:absolute  left-10">@yalnasiri</div>
         <div className="flex font-bold justify-center items-center gap-x-10">
 
