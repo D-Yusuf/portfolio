@@ -8,7 +8,7 @@ import TechSquare from '../components/TechSquare'
 
 export default function Introduction() {
   return (
-    <section id='introduction' className=" w-full flex max-h-screen  ">
+    <section id='introduction' className=" w-full flex max-h-screen  animate-fade-in">
         <div className='flex flex-col w-full md:gap-16 gap-8 lg:items-start items-center lg:text-left text-center'>
             <h1 className='md:text-6xl text-4xl font-bold'>Hello, I'm Yusuf Alnasiri 👋</h1>
             <Image 
@@ -16,6 +16,9 @@ export default function Introduction() {
           alt='me' 
 
           className='lg:hidden  w-[250px] h-[300px] object-cover -z-10 rounded-md'
+          placeholder='blur'
+          sizes='(max-width: 1024px) 250px'
+          priority
         />
             <h2 className='md:text-4xl text-2xl font-bold '>A Full-Stack Developer 📱/💻</h2>
 
@@ -47,6 +50,9 @@ export default function Introduction() {
           alt='me' 
 
           className='hidden lg:w-[400px] lg:h-[600px]  lg:block rounded-b-full rounded-e-full mt-auto'
+          placeholder='blur'
+          sizes='(min-width: 1024px) 400px'
+          priority
         />
         
     </section>

@@ -114,6 +114,25 @@ html {
     display: inline-block;
   }
   
+  /* Simple entrance animations */
+  @keyframes fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  @keyframes slide-up {
+    0% { opacity: 0; transform: translateY(16px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+
+  .animate-fade-in {
+    animation: fade-in 700ms ease-out both;
+  }
+
+  .animate-slide-up {
+    animation: slide-up 700ms ease-out both;
+  }
+  
   @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }

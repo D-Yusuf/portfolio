@@ -71,7 +71,7 @@ export default function Contact() {
   };
 
   return (
-    <section id='contact' className="w-full  flex flex-col items-start  relative ">
+    <section id='contact' className="w-full  flex flex-col items-start  relative  animate-fade-in">
       <h1 className="md:text-6xl text-4xl font-bold mb-4">Get In Touch</h1>
       <p className="md:text-4xl text-2xl mb-8">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
       <form onSubmit={handleSubmit} className="w-full max-w-2xl px-4">
